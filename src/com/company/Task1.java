@@ -163,4 +163,48 @@ public class Task1 {
         }
 
     }
+/**
+ * Задачи:
+     15. Написать метод tryWhile принимающий 1 параметр типа int и назвать его param1. Необходимо используя управляющую конструкцию while написать цикл выполняющий вывод на консоль всех цифр от param1 до 0.
+            *             пример использования:
+            *             while(some_condition_of_boolean_type){
+ *                 ...
+ *             }
+ *
+         *             16. Написать метод tryDoWhile аналогичный 15, но используя конструкцию do/while
+            *              пример использования:
+            *              do{
+ *                  ...
+ *              }while(some_condition_of_boolean_type)
+            *
+            *              17. Написать метод trySwitch принимающий 1 параметр типа int. Используя конструкцию switch необходимо для входного параметра равного 1 вывести 'A', для 2 вывести 'B', а для всех остальных 'X'.
+            *
+ */
+
+    public void tryWhile (int param){
+        while (param>0){
+            System.out.println(param);
+            param--;
+        }
+    }
+    public void doWhile(int param){
+        do{
+            System.out.println(param);
+            param--;
+        }
+        while (param>0);
+    }
+
+    public void switchCase(int param){
+        switch (param){
+            case 1:
+                System.out.println('A');
+                break;
+            case 2:
+                System.out.println('B');
+
+            default:
+                System.out.println('X');
+        }
+    }
 }
